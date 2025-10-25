@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstddef>
 
-bool isPyth(size_t a, size_t b, size_t c)
+bool isPyth(unsigned a, unsigned b, unsigned c)
 {
   bool p = (a*a == (b*b + c*c));
   p = p || (b*b == (a*a + c*c));
