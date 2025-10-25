@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstddef>
 
-bool isPyth(unsigned a, unsigned b, unsigned c)
+bool isPyth(size_t a, size_t b, size_t c)
 {
   bool p = (a*a == (b*b + c*c));
   p = p || (b*b == (a*a + c*c));
@@ -11,8 +11,7 @@ bool isPyth(unsigned a, unsigned b, unsigned c)
 
 int main()
 {
-  using u_t = unsigned;
-  u_t a = 0, b = 0, c = 0;
+  size_t a = 0, b = 0, c = 0;
   std::cin >> c >> b;
   size_t count = 0;
 
