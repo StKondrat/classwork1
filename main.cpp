@@ -22,7 +22,7 @@ int main(){
     b = a;
   }
 
-  if (std::cin.eoF())
+  if (std::cin.eof())
   {
     std::cout << count;
     std::cout << "\n";
