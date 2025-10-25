@@ -2,11 +2,18 @@
 int main(){
   using u_t = unsigned;
   u_t a = 0;
-  std::cin >> a;
+  size_t count = 0;
+  while (std::cin >> a)
+  {
+    count++;
+  }
 
-  if (std::cin.eoF()){
-    std::cout << 0 << "\n";
-  }else if(std::cin.fail(){
+  if (std::cin.eoF())
+  {
+    std::cout << count;
+    std::cout << "\n";
+
+  } else if (std::cin.fail()){
     std::cerr << "Error\n";
     return 1;
   }
